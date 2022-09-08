@@ -1,0 +1,149 @@
+@font-face {
+  font-family: ME;
+  src: url("/ME.otf");
+}
+
+//LOADING STYLING
+
+.loadingContainer {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.titleContainer {
+  height: fit-content;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.innerContainer {
+  display: flex;
+  align-items: flex-start;
+  .title {
+    font-family: "ME";
+    font-size: 42px;
+    line-height: 1;
+  }
+  .reservedSign {
+    font-size: 24px;
+    padding-top: 5px;
+  }
+}
+//HEADER STYLING
+
+.header {
+  background: #9fa29f;
+  display: flex;
+  padding-top: 45px;
+  font-family: ME;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 133px;
+  .orderButton {
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border-radius: 4vw;
+    font-size: max(1vw, 18px);
+    padding: 1.0625rem 2.5625rem 1.1875rem;
+    border: none;
+    font-family: ME;
+  }
+  .logo {
+    display: Flex;
+    .text {
+      font-size: max(2vw, 50px);
+    }
+    .reservedSign {
+      padding-top: 15px;
+    }
+  }
+  .nav {
+    display: flex;
+    gap: 50px;
+    a {
+      display: inline-block;
+      font-size: max(1vw, 18px);
+    }
+  }
+}
+
+//PAGE STYLING
+.pageContainer {
+  padding: 0 5.3333333333vw;
+  background: #9fa29f;
+}
+.container {
+  background: #9fa29f;
+  height: 100vh;
+  width: 100vw;
+}
+
+.productInfo {
+  .topLine,
+  .bottomLine {
+    height: fit-content;
+    overflow: hidden;
+
+    .text {
+      font-family: ME;
+      color: #fff;
+      font-size: max(2.5vw, 60px);
+      display: block;
+    }
+  }
+  .bottomLine {
+    margin-bottom: 52px;
+  }
+  .moreProducts {
+    background: none;
+    opacity: 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: max(1vw, 18px);
+    padding: 0;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    .text {
+      font-family: ME;
+      color: #fff;
+    }
+  }
+}
+.mainImageContainer {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+}
+.letterRevealContainer {
+  font-size: calc(16.66vw);
+  font-family: ME;
+  position: absolute;
+  bottom: 0;
+  left: 4.8vw;
+  color: #fff;
+  display: flex;
+  overflow: hidden;
+  height: fit-content;
+  line-height: 1;
+  .reserved {
+    font-size: 5vw;
+    display: inline-block;
+    padding-top: 5vw;
+  }
+}
