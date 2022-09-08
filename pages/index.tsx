@@ -144,6 +144,7 @@ const Home: NextPage = () => {
         >
           {"BRAND®".split("").map((letter, index) => (
             <motion.span
+              key={index}
               className={`${styles.letter} ${
                 index == 5 ? styles.reserved : undefined
               }`}
